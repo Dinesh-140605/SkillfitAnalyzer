@@ -1,0 +1,9 @@
+I have experience in Python programming and SQL queries.
+
+Built a REST API for student management using Django + MySQL with role-based access control and automated testing.
+
+Implemented sentiment analysis model using Python + ML libraries (scikit-learn, NLTK) to classify customer reviews with 89% accuracy.
+
+Worked on machine learning mini projects and created dashboards using Tableau and PowerBI.
+
+Did an internship where I analyzed datasets using pandas and Excel, built automated reports with Python scripts.

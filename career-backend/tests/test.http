@@ -1,0 +1,17 @@
+
+@jd = file("./tests/jd.txt")
+@resume = file("./tests/resume.txt")
+
+### Full analyze using form-data
+POST http://127.0.0.1:8000/full-analyze
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryXYZ
+
+------WebKitFormBoundaryXYZ
+Content-Disposition: form-data; name="jd_text"
+
+{{jd}}
+------WebKitFormBoundaryXYZ
+Content-Disposition: form-data; name="resume_text"
+
+{{resume}}
+------WebKitFormBoundaryXYZ--

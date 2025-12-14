@@ -1,0 +1,3 @@
+We are hiring a Data Analyst with strong skills in Python, SQL, Excel, and data visualization.
+Experience with dashboards, problem solving, and reporting is required.
+Knowledge of machine learning is a plus.
