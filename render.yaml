@@ -1,0 +1,28 @@
+services:
+  # Backend Service (FastAPI)
+  - type: web
+    name: skillfit-backend
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: "pip install -r career-backend/requirements.txt"
+    startCommand: "cd career-backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+
+  # Frontend Service (Next.js)
+  - type: web
+    name: skillfit-frontend
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: "cd new-career-frontend && npm install && npm run build"
+    startCommand: "cd new-career-frontend && npm start"
+    envVars:
+      - key: NODE_VERSION
+        value: "18.17.0"
+      - key: NEXT_PUBLIC_API_URL
+        sync: false
